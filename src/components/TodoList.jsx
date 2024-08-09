@@ -5,6 +5,7 @@ import List from "./List";
 function TodoList() {
       function add() {
         setUpdate(addTask);
+        updateAddTask("");
       }
       const [update, setUpdate] = useState("");
       const [addTask, updateAddTask] = useState("");
