@@ -6,7 +6,7 @@ function List({ update }) {
     const{list,setList}=useContext(todoContext);
     useEffect(() => {
         if (update) {
-            setList((prevList) => [...prevList, update]);
+            setList((prevList) => [...prevList,{id:prevList.length+1,todoData:update,finished:false}]);
         }
     }, [update]);
 
@@ -16,7 +16,7 @@ function List({ update }) {
                 <p className="text-sm md:text-2xl lg:text-2xl">No tasks available</p>
             ) : (
                 list.map((todo, index) => (
-                    <Todo key={index} id={index} todoData={todo}/>
+                    <Todo key={todo.id} id={todo.id} todoData={todo.todoData}/>
                 ))
             )}
         </>
