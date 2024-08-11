@@ -34,7 +34,7 @@ function TodoInput({ add, setValues }) {
                   ></input>
                   <button
                         onClick={handleAddClick}
-                        className=" bg-black dark:bg-white dark:text-black text-white justify-center items-center font-bold flex lg:hidden md:hidden"
+                        className="px-3 py-1 bg-black dark:bg-white dark:text-black text-white justify-center items-center font-bold flex lg:hidden md:hidden"
                   >
                         <span class="text-2xl material-symbols-outlined">
                                                 add
