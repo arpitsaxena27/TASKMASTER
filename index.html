@@ -1,33 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-      body {
-            font-family: "Merriweather", serif;
-      }
-</style>
-<link rel="icon" type="image/x-icon" href="logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TASK MASTER</title>
-    <style>
-      * {
-            transition: all 0.5s ease-in-out; /* Example transition for all properties */
-      }
-      body {
-            background: rgb(249, 249, 249);
-            background: linear-gradient(
-                  90deg,
-                  rgba(59, 60, 71, 1) 0%,
-                  rgba(0, 0, 0, 1) 85%
-            );
-      }
-</style>
-  </head>
-  <link rel="stylesheet" href="./index.css" />
-  <body class="bg-black text-white min-h-screen p-5 pt-8 md:pt-12">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+      <head>
+            <meta charset="UTF-8" />
+            <style>
+                  @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+                  body {
+                        font-family: "Merriweather", serif;
+                  }
+            </style>
+            <link rel="icon" type="image/x-icon" href="logo.png" />
+            <link
+                  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                  rel="stylesheet"
+            />
+            <link
+                  rel="stylesheet"
+                  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+            />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>TASK MASTER</title>
+            <style>
+                  * {
+                        transition:  all 0.5s ease-in-out,color 0.0s ease-in-out,;
+                  }
+
+                  body.darker {
+                        background: linear-gradient(
+                              90deg,
+                              rgba(59, 60, 71, 1) 0%,
+                              rgb(0, 0, 0) 85%
+                        );
+                  }
+                  body.lighter {
+                        background: linear-gradient(
+                              90deg,
+                              rgb(153, 153, 154) 0%,
+                              rgb(255, 255, 255) 85%
+                        );
+                  }
+            </style>
+      </head>
+      <link rel="stylesheet" href="./index.css" />
+      <body class="lighter">
+            <div id="root"></div>
+            <script type="module" src="/src/main.jsx"></script>
+      </body>
 </html>

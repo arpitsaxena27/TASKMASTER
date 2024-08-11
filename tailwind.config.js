@@ -1,9 +1,10 @@
-import daisyui from "./node_modules/daisyui";
-/** @type {import('tailwindcss').Config} */
-export default {
-      content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-      theme: {
-            extend: {},
-      },
-      plugins: [daisyui],
-};
+module.exports = {
+  darkMode: 'class', // Enable class-based dark mode
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}', // Adjust based on your project structure
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [require("daisyui")],
+}
