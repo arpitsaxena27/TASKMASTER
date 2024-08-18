@@ -23,7 +23,6 @@ function App() {
         });
       }      
 
-      
     const [isDarkMode, setIsDarkMode] = useState(() => {
         const savedTheme = localStorage.getItem("theme");
         return JSON.parse(savedTheme) ;
