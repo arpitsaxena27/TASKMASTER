@@ -3,12 +3,12 @@
   "name": "My Website",
   "icons": [
     {
-      "src": "/path/to/icon.png",
+      "src": "./logo.ico",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/path/to/icon.png",
+      "src": "./logo.ico",
       "type": "image/png",
       "sizes": "512x512"
     }
