@@ -1,19 +1,19 @@
 {
-  "short_name": "MyApp",
-  "name": "My Website",
+  "short_name": "TaskMaster",
+  "name": "Task Master",
   "icons": [
     {
-      "src": "./logo.ico",
+      "src": "./logo-gblkOa4A.ico",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "./logo.ico",
+      "src": "./logo-gblkOa4A.ico",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000"
